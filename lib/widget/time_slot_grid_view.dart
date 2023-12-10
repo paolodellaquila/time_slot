@@ -117,7 +117,7 @@ class _TimeSlotGridViewState extends State<TimeSlotGridView> {
                     title: Text(
                       localeController!
                           .translate(slotTimes.keys.toList()[index]),
-                      style: const TextStyle(fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
                     contentPadding: EdgeInsets.zero,
                   ),

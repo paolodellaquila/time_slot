@@ -2,11 +2,12 @@
 
 import '../locale/ar.dart';
 import '../locale/en.dart';
+import '../locale/it.dart';
 
 class LocaleController {
   final String locale;
 
-  LocaleController({this.locale = "en"});
+  LocaleController({this.locale = "it"});
 
   String translate(String text) {
     String? translationText;
@@ -14,7 +15,10 @@ class LocaleController {
       translationText = en[text];
     } else if (locale.toLowerCase().trim() == "ar") {
       translationText = ar[text];
+    } else if (locale.toLowerCase().trim() == "it") {
+      translationText = it[text];
     }
+    
     return translationText ?? text;
   }
 }
