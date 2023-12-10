@@ -1,4 +1,4 @@
-const Map<String, String> en = {
+const Map<String, String> it = {
   "morning": "Mattina",
   "afternoon": "Pomeriggio",
   "evening": "Sera",
